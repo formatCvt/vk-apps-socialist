@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vk-apps-socialist/static/css/main.981f7211.chunk.css",
-    "main.js": "/vk-apps-socialist/static/js/main.559f4062.chunk.js",
-    "main.js.map": "/vk-apps-socialist/static/js/main.559f4062.chunk.js.map",
+    "main.js": "/vk-apps-socialist/static/js/main.98a7f684.chunk.js",
+    "main.js.map": "/vk-apps-socialist/static/js/main.98a7f684.chunk.js.map",
     "runtime-main.js": "/vk-apps-socialist/static/js/runtime-main.b9bec409.js",
     "runtime-main.js.map": "/vk-apps-socialist/static/js/runtime-main.b9bec409.js.map",
     "static/css/2.27cde75d.chunk.css": "/vk-apps-socialist/static/css/2.27cde75d.chunk.css",
-    "static/js/2.ee0561ea.chunk.js": "/vk-apps-socialist/static/js/2.ee0561ea.chunk.js",
-    "static/js/2.ee0561ea.chunk.js.map": "/vk-apps-socialist/static/js/2.ee0561ea.chunk.js.map",
+    "static/js/2.f4dde2fb.chunk.js": "/vk-apps-socialist/static/js/2.f4dde2fb.chunk.js",
+    "static/js/2.f4dde2fb.chunk.js.map": "/vk-apps-socialist/static/js/2.f4dde2fb.chunk.js.map",
     "index.html": "/vk-apps-socialist/index.html",
-    "precache-manifest.84d1bc24fbd34ae55110908b498991bb.js": "/vk-apps-socialist/precache-manifest.84d1bc24fbd34ae55110908b498991bb.js",
+    "precache-manifest.22ed68cab16b203955cb054414b58b08.js": "/vk-apps-socialist/precache-manifest.22ed68cab16b203955cb054414b58b08.js",
     "service-worker.js": "/vk-apps-socialist/service-worker.js",
     "static/css/2.27cde75d.chunk.css.map": "/vk-apps-socialist/static/css/2.27cde75d.chunk.css.map",
     "static/css/main.981f7211.chunk.css.map": "/vk-apps-socialist/static/css/main.981f7211.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.b9bec409.js",
     "static/css/2.27cde75d.chunk.css",
-    "static/js/2.ee0561ea.chunk.js",
+    "static/js/2.f4dde2fb.chunk.js",
     "static/css/main.981f7211.chunk.css",
-    "static/js/main.559f4062.chunk.js"
+    "static/js/main.98a7f684.chunk.js"
   ]
 }
