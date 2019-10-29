@@ -19,8 +19,10 @@ const osName = platform();
 const Persik = props => {
 	const [fetchedEmail, setEmail] = useState(null);
 	const [fetchedPhone, setPhone] = useState(null);
+	const [sharedType, setShared] = useState(null);
 	const [emailFetched, setEmailFetched] = useState(false);
 	const [phoneFetched, setPhoneFetched] = useState(false);
+	const [linkShared, setLinkShared] = useState(false);
 	useEffect(() => {
 		async function fetchData() {
 			let getEmailResult = null;
@@ -40,6 +42,15 @@ const Persik = props => {
 				//getEmailResult = 'запретил'
 			}
 			setPhone(getPhoneNumberResult ? getPhoneNumberResult.phone_number : 'Не удалось получить');
+
+			let appShareResult = null;
+			try {
+				appShareResult = await connect.sendPromise('VKWebAppShare');
+				setLinkShared(true);
+			} catch (e) {
+				//getEmailResult = 'запретил'
+			}
+			setShared(appShareResult ? 'Тип: ' + appShareResult.type : 'Отказался');
 		}
 		fetchData();
 	}, []);
@@ -55,7 +66,8 @@ const Persik = props => {
 			</PanelHeader>
 			<Group title="e-mail"><Div>{fetchedEmail == null ? <PanelSpinner /> : fetchedEmail}</Div></Group>
 			<Group title="phone"><Div>{fetchedPhone == null ? <PanelSpinner /> : fetchedPhone}</Div></Group>
-			<Div>{emailFetched && phoneFetched ? <img className="Persik" src={persik} alt="Persik The Cat" /> : 'Что бы увидеть персика разрешите доступ к телефону и почте'}</Div>
+			<Group title="Share"><Div>{sharedType == null ? <PanelSpinner /> : sharedType}</Div></Group>
+			<Div>{emailFetched && phoneFetched && linkShared ? <img className="Persik" src={persik} alt="Persik The Cat" /> : 'Что бы увидеть Персика разрешите доступ к телефону, почте и поделитесь ссылкой'}</Div>
 		</Panel>
 	);
 }
